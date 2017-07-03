@@ -33,6 +33,7 @@ public class MainFragment extends Fragment {
         View v = binding.getRoot();
         User user = new User("ROBIN", "KAMBOJ");
         binding.setUser(user);
+        binding.setHandlers(new MyHandlers());
 
         return v;
     }

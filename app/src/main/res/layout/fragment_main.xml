@@ -2,6 +2,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable
+            name="handlers"
+            type="com.appbusters.robinkamboj.androiddatabinding.MyHandlers"/>
+        <variable
             name="user"
             type="com.appbusters.robinkamboj.androiddatabinding.User"/>
     </data>
@@ -17,5 +20,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{user.lastName}"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/touch_me"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:padding="5sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:onClick="@{handlers.onClickFriend}"/>
     </LinearLayout>
 </layout>
